@@ -12,6 +12,7 @@ public class MainMenuManager : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+
     }
 
     public void LoadSavedGame()

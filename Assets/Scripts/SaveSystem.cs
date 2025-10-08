@@ -8,6 +8,7 @@ public class SaveData
     public float playerX;
     public float playerY;
     public float playerZ;
+    
 }
 
 public static class SaveSystem
@@ -21,6 +22,7 @@ public static class SaveSystem
         data.playerX = player.transform.position.x;
         data.playerY = player.transform.position.y;
         data.playerZ = player.transform.position.z;
+        
 
         string json = JsonUtility.ToJson(data);
         PlayerPrefs.SetString(SaveKey, json);
